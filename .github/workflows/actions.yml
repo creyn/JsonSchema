@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run validator
-        uses: OrRosenblatt/validate-json-action@0.1.0
-        with:
-          json: values.json
+        uses: docker://orrosenblatt/validate-json-action:latest
+        env:
+          INPUT_SCHEMA: schema.json
+          INPUT_JSONS: values.json
