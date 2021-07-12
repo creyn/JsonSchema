@@ -14,6 +14,7 @@
     },
     "required": [
         "Id",
-        "name"
+        "name",
+		"description"
     ]
 }
