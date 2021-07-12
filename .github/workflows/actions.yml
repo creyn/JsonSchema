@@ -16,5 +16,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run validator
-        shell: pwsh
-        run: Get-Content values.json | Test-Json
+        run: jq < values.json
