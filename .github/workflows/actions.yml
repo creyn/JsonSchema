@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run validator
-        run: json validate --schema-file=schema.json < values.json
+        run: sudo pip install json-spec | json validate --schema-file=schema.json < values.json
