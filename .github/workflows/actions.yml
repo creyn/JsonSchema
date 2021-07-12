@@ -18,4 +18,4 @@ jobs:
       - name: Run validator
         run: |
           sudo pip install json-spec
-          json validate --schema-file=schema.json < values.json
+          json validate < values.json
